@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Medicine Packet Analyzer</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="box">
+    <h2>Medicine Packet Analyzer</h2>
+    <p class="subtitle">Upload one medicine image — Extract name, expiry and info.</p>
+
+    <form id="uploadForm" method="post" enctype="multipart/form-data">
+      <!-- Upload button -->
+      <label for="imageInput" class="upload-btn">📤 Upload / Drag Image</label>
+      <input id="imageInput" type="file" name="images" accept="image/*" style="display:none">
+
+      <!-- Preview -->
+      <img id="preview" alt="preview" class="upload-preview" style="display:none">
+
+      <!-- Language toggle -->
+      <div class="lang-row">
+        <label for="langToggle">🌐 Language / ಭಾಷೆ</label>
+        <select id="langToggle">
+          <option value="en">English</option>
+          <option value="kn">ಕನ್ನಡ</option>
+        </select>
+      </div>
+
+      <!-- Extract button -->
+      <button id="submitBtn" type="button">Extract Info</button>
+    </form>
+
+    <!-- Results -->
+    <div id="output" class="output"></div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
+

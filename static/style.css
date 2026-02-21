@@ -1,0 +1,101 @@
+body {
+  font-family: "Nirmala UI", "Noto Sans Kannada", Arial, sans-serif;
+  background: #f5f7fb;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+}
+
+.box {
+  background: white;
+  padding: 25px;
+  max-width: 420px;
+  width: 100%;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+h2 { margin-bottom: 15px; color: #1f2937; }
+
+.upload-btn {
+  display: block;
+  background: #10b981;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background 0.3s, transform 0.2s;
+}
+.upload-btn:hover { background: #059669; transform: translateY(-2px); }
+
+button {
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+button:hover { background: #1e40af; transform: translateY(-2px); }
+button:disabled { background: gray; cursor: not-allowed; }
+
+.lang-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #374151;
+}
+.lang-row select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.output {
+  margin-top: 25px;
+  background: #111827;
+  color: #e5e7eb;
+  padding: 18px;
+  border-radius: 10px;
+  text-align: left;
+  min-height: 120px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  
+}
+.full-text {
+  line-height: 1.6;
+}
+
+
+.upload-preview {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.result-name { font-size: 18px; font-weight: bold; margin-top: 10px; color: #3b82f6; }
+.result-expiry { font-size: 14px; margin-bottom: 12px; color: #9ca3af; }
+
+.card {
+  background: #fff;
+  color: #111827;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.uses-title, .se-title { font-weight: bold; margin-top: 10px; color: #2563eb; }
